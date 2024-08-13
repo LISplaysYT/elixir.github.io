@@ -64,4 +64,8 @@ server.on("listening", () => {
     );
 });
 
+/ listening the server
+app.listen(app.get('port'), () => {
+    console.log('Server on port ', app.get('port'));
+});
 server.listen({ port: process.env.PORT || 8080 });
